@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ELK," />
 
 
 
@@ -87,12 +87,28 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="geek A">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="玩一下elastic的東西，還是挺有趣的。kibana官網上介紹的不錯，實際配置起來也容易，將tar包解壓後就能用了也不用配置額外的東西。
+直接啟動1kibana start
+如果服務器上已經有elasticsearch, logstash設置，kibana會自己去抓restful路徑，一切都可以在web介面操作。
+
+初用的時候要配置elasticsearch的indice之後就可以用discov">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kibana 初探">
+<meta property="og:url" content="http://yoursite.com/2017/06/19/kibana_intro/index.html">
 <meta property="og:site_name" content="geek A">
+<meta property="og:description" content="玩一下elastic的東西，還是挺有趣的。kibana官網上介紹的不錯，實際配置起來也容易，將tar包解壓後就能用了也不用配置額外的東西。
+直接啟動1kibana start
+如果服務器上已經有elasticsearch, logstash設置，kibana會自己去抓restful路徑，一切都可以在web介面操作。
+
+初用的時候要配置elasticsearch的indice之後就可以用discov">
+<meta property="og:updated_time" content="2017-06-19T08:32:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="geek A">
+<meta name="twitter:title" content="kibana 初探">
+<meta name="twitter:description" content="玩一下elastic的東西，還是挺有趣的。kibana官網上介紹的不錯，實際配置起來也容易，將tar包解壓後就能用了也不用配置額外的東西。
+直接啟動1kibana start
+如果服務器上已經有elasticsearch, logstash設置，kibana會自己去抓restful路徑，一切都可以在web介面操作。
+
+初用的時候要配置elasticsearch的indice之後就可以用discov">
 
 
 
@@ -120,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/19/kibana_intro/"/>
 
 
 
 
 
-  <title> 歸檔 | geek A </title>
+  <title> kibana 初探 | geek A </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -151,7 +167,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,140 +251,179 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共計 3 篇文章。 繼續努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/19/kibana_intro/" itemprop="url">
-              
-                <span itemprop="name">kibana 初探</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-19T00:00:00+00:00"
-              content="2017-06-19" >
-          06-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/05/build_gitbook/" itemprop="url">
-              
-                <span itemprop="name">deploy gitbook</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-05T06:51:56+00:00"
-              content="2017-04-05" >
-          04-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/19/build_blog/" itemprop="url">
-              
-                <span itemprop="name">架一個可攜帶好管理不會被刪帖的博客</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-19T00:00:00+00:00"
-              content="2017-03-19" >
-          03-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/19/kibana_intro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="AriaYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="geek A">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                kibana 初探
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-06-19T00:00:00+00:00">
+                2017-06-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/06/19/kibana_intro/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/19/kibana_intro/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>玩一下elastic的東西，還是挺有趣的。kibana官網上介紹的不錯，<br>實際配置起來也容易，將tar包解壓後就能用了也不用配置額外的東西。</p>
+<p>直接啟動<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">kibana start</div></pre></td></tr></table></figure></p>
+<p>如果服務器上已經有elasticsearch, logstash設置，kibana會自己去抓restful路徑，<br>一切都可以在web介面操作。</p>
+
+<p>初用的時候要配置elasticsearch的indice<br>之後就可以用discover的功能查看紀錄</p>
+<p>5.0版本的kibana主要有以下三個模塊</p>
+<ul>
+<li>visualize 頁面可以創建各式各樣表單 </li>
+<li>dashboard可以把在visualize創建的表單放在同個頁面（就是主控台啦）然後根據頻率更新。</li>
+<li>timelion專注在時序相關的圖，結合一些簡單算術的API可以做些百分比曲線圖等。</li>
+</ul>
+<p>x-pack是實驗功能，可以額外下載裝上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bin/kibana-plugin install x-pack</div></pre></td></tr></table></figure>
+<p>集群上的es每台都要裝，最好是同版本不然會報錯。<br>裡面有簡單的回歸預測(ml)還有關係圖(graph)等功能，不過有license限制，免費版一個月，<br>沒有深度需求大部分功能也可以自己搞，更加客製化。這個x-pack我認為是設計給數據分析人員的，不用懂技術也能上手。當然相對來說可操作性就很低了，目前開放的API比較少。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ELK/" rel="tag"># ELK</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/05/build_gitbook/" rel="next" title="deploy gitbook">
+                <i class="fa fa-chevron-left"></i> deploy gitbook
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -376,6 +431,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/06/19/kibana_intro/"
+           data-title="kibana 初探" data-url="http://yoursite.com/2017/06/19/kibana_intro/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -554,11 +617,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   

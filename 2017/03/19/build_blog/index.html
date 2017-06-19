@@ -87,12 +87,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="geek A">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="目的快速架一個屬於程序員的博客，用markdown來寫，部屬在線上git倉庫。優點很明顯，自己就是管理員不用擔心哪天犯了哪條平台規範被刪，也不用擔心平台掛掉寫的都白費，況且搬遷也很方便，檔案都是架在docker的container裡，哪天想換服務器直接導出image就好。
+技術要求懂一點docker、git、linux，會寫markdown就行，這對程序員來說都很基本。
+使用工具docker: 強">
+<meta property="og:type" content="article">
+<meta property="og:title" content="架一個可攜帶好管理不會被刪帖的博客">
+<meta property="og:url" content="http://yoursite.com/2017/03/19/build_blog/index.html">
 <meta property="og:site_name" content="geek A">
+<meta property="og:description" content="目的快速架一個屬於程序員的博客，用markdown來寫，部屬在線上git倉庫。優點很明顯，自己就是管理員不用擔心哪天犯了哪條平台規範被刪，也不用擔心平台掛掉寫的都白費，況且搬遷也很方便，檔案都是架在docker的container裡，哪天想換服務器直接導出image就好。
+技術要求懂一點docker、git、linux，會寫markdown就行，這對程序員來說都很基本。
+使用工具docker: 強">
+<meta property="og:updated_time" content="2017-03-20T08:44:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="geek A">
+<meta name="twitter:title" content="架一個可攜帶好管理不會被刪帖的博客">
+<meta name="twitter:description" content="目的快速架一個屬於程序員的博客，用markdown來寫，部屬在線上git倉庫。優點很明顯，自己就是管理員不用擔心哪天犯了哪條平台規範被刪，也不用擔心平台掛掉寫的都白費，況且搬遷也很方便，檔案都是架在docker的container裡，哪天想換服務器直接導出image就好。
+技術要求懂一點docker、git、linux，會寫markdown就行，這對程序員來說都很基本。
+使用工具docker: 強">
 
 
 
@@ -120,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/19/build_blog/"/>
 
 
 
 
 
-  <title> geek A </title>
+  <title> 架一個可攜帶好管理不會被刪帖的博客 | geek A </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -151,9 +161,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,292 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/19/kibana_intro/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="AriaYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="geek A">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/06/19/kibana_intro/" itemprop="url">
-                  kibana 初探
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-06-19T00:00:00+00:00">
-                2017-06-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/19/kibana_intro/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/19/kibana_intro/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>玩一下elastic的東西，還是挺有趣的。kibana官網上介紹的不錯，<br>實際配置起來也容易，將tar包解壓後就能用了也不用配置額外的東西。</p>
-<p>直接啟動<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">kibana start</div></pre></td></tr></table></figure></p>
-<p>如果服務器上已經有elasticsearch, logstash設置，kibana會自己去抓restful路徑，<br>一切都可以在web介面操作。</p>
-
-<p>初用的時候要配置elasticsearch的indice<br>之後就可以用discover的功能查看紀錄</p>
-<p>5.0版本的kibana主要有以下三個模塊</p>
-<ul>
-<li>visualize 頁面可以創建各式各樣表單 </li>
-<li>dashboard可以把在visualize創建的表單放在同個頁面（就是主控台啦）然後根據頻率更新。</li>
-<li>timelion專注在時序相關的圖，結合一些簡單算術的API可以做些百分比曲線圖等。</li>
-</ul>
-<p>x-pack是實驗功能，可以額外下載裝上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bin/kibana-plugin install x-pack</div></pre></td></tr></table></figure>
-<p>集群上的es每台都要裝，最好是同版本不然會報錯。<br>裡面有簡單的回歸預測(ml)還有關係圖(graph)等功能，不過有license限制，免費版一個月，<br>沒有深度需求大部分功能也可以自己搞，更加客製化。這個x-pack我認為是設計給數據分析人員的，不用懂技術也能上手。當然相對來說可操作性就很低了，目前開放的API比較少。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/05/build_gitbook/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="AriaYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="geek A">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/04/05/build_gitbook/" itemprop="url">
-                  deploy gitbook
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-04-05T06:51:56+00:00">
-                2017-04-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/04/05/build_gitbook/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/05/build_gitbook/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="purpose"><a href="#purpose" class="headerlink" title="purpose"></a>purpose</h2><p>gitbook is a open-source on-line web book, based on nodejs. we could share knowledge on it or collebrate with team member.<br>I deployed gitbook on docker for easy management, here is my example.</p>
-<h2 id="deployed-your-own-gitbook-by-docker"><a href="#deployed-your-own-gitbook-by-docker" class="headerlink" title="deployed your own gitbook by docker"></a>deployed your own gitbook by docker</h2><p>first, run centos7 on docker and install nodejs<br>then install gitbook client.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gitbook-cli -g</div></pre></td></tr></table></figure>
-<p>now you could write your own gitbook, it’s quite easy.</p>
-<h2 id="SUMMARY-md"><a href="#SUMMARY-md" class="headerlink" title="SUMMARY.md"></a>SUMMARY.md</h2><p>This is the book structure.<br>you should edit this file to modify book’s chapters and pages.<br>like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">*[chapter1](/your/chapter.md)</div><div class="line">	*[Page1](another/pages.md)</div><div class="line">*[chapter2](/your/anotherChapter.md)</div><div class="line">	...</div></pre></td></tr></table></figure></p>
-<p>As you see, we could arrange our markdown files under parent directory with any sub directories.  </p>
-<h2 id="serve-gitbook"><a href="#serve-gitbook" class="headerlink" title="serve gitbook"></a>serve gitbook</h2><p>Very simple, just type:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gitbook serve</div></pre></td></tr></table></figure></p>
-<p>then your gitbook is served on defalut port 4000.<br>you could run your gitbook process backend by nohup + &amp;.</p>
-<p>enjoy.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -551,10 +276,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/19/build_blog/" itemprop="url">
-                  架一個可攜帶好管理不會被刪帖的博客
-                </a>
+                架一個可攜帶好管理不會被刪帖的博客
               
             
           </h1>
@@ -615,9 +337,7 @@
       
 
       
-        
-          
-            <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>快速架一個屬於程序員的博客，用markdown來寫，部屬在線上git倉庫。<br>優點很明顯，自己就是管理員不用擔心哪天犯了哪條平台規範被刪，也不用擔心平台掛掉寫的都白費，況且搬遷也很方便，<br>檔案都是架在docker的container裡，哪天想換服務器直接導出image就好。</p>
+        <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>快速架一個屬於程序員的博客，用markdown來寫，部屬在線上git倉庫。<br>優點很明顯，自己就是管理員不用擔心哪天犯了哪條平台規範被刪，也不用擔心平台掛掉寫的都白費，況且搬遷也很方便，<br>檔案都是架在docker的container裡，哪天想換服務器直接導出image就好。</p>
 <h3 id="技術要求"><a href="#技術要求" class="headerlink" title="技術要求"></a>技術要求</h3><p>懂一點docker、git、linux，會寫markdown就行，這對程序員來說都很基本。</p>
 <h3 id="使用工具"><a href="#使用工具" class="headerlink" title="使用工具"></a>使用工具</h3><p>docker: 強大的虛擬環境建構工具<br>Hexo: 基於nodejs的blog生成工具</p>
 <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ul>
@@ -657,20 +377,27 @@
 <p>發文章流程:<br>hexo new 會在source/_post裡創建一個MD檔，在這裡頭寫文章<br>最後在根目錄執行hexo g -d 自動部屬上github</p>
 </blockquote>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -678,21 +405,38 @@
       
 
       
-
+        
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/05/build_gitbook/" rel="prev" title="deploy gitbook">
+                deploy gitbook <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -700,6 +444,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/19/build_blog/"
+           data-title="架一個可攜帶好管理不會被刪帖的博客" data-url="http://yoursite.com/2017/03/19/build_blog/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -719,8 +471,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -773,6 +534,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目的"><span class="nav-number">1.</span> <span class="nav-text">目的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技術要求"><span class="nav-number">1.1.</span> <span class="nav-text">技術要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用工具"><span class="nav-number">1.2.</span> <span class="nav-text">使用工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步驟"><span class="nav-number">2.</span> <span class="nav-text">步驟</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -878,6 +655,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
